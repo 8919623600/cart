@@ -12,7 +12,13 @@ env.TAG_NAME="latest"
 // env.SONAR_URL = "172.31.38.100"
 // nodejs()
 // withCredentials{(credentialsId: 'AWC_CREDS')}
-
+stage('Login to ECR') {
+        //withCredentials([usernameId: 'AWS_CREDS', passwordVariable: 'AWS_ACCESS_KEY_ID', fileCredentialId: 'AWS_CREDS', secretFileVariable: 'AWS_SECRET_ACCESS_KEY']) {
+        sh "echo Authenticating To ECR"
+        sh "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 851725330688.dkr.ecr.us-east-1.amazonaws.com"
+     
+      //  }
 docker()
 
+      }
 }
