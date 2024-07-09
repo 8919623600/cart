@@ -11,7 +11,7 @@ env.TAG_NAME="latest"
 // env.NEXUS_URL = "172.31.38.109"
 // env.SONAR_URL = "172.31.38.100"
 // nodejs()
-node ('ws'){
+// node ('ws'){
         // env.AWS_ACCESS_KEY_ID = 'AWS_ACCESS_KEY_ID_ROBOSHOP'
         // env.AWS_SECRET_ACCESS_KEY = 'AWS_SECRET_ACCESS_KEY_ROBOSHOP'
         // env.REGION = 'us-east-1'
@@ -56,4 +56,3 @@ node ('ws'){
 // docker()
 
       
-}
