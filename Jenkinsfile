@@ -1,6 +1,6 @@
 @Library('shared-library') _
 
-node('your-agent-label') {
+node('ws') {
 
 env.COMPONENT="cart"   // this is how variable is declared and this we can call from shared library
 env.APPTYPE="nodejs"
