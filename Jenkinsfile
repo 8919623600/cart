@@ -1,6 +1,3 @@
-pipeline {
-    agent { label 'ws' }
-
 @Library('shared-library') _
 
 env.COMPONENT="CART"   // this is how variable is declared and this we can call from shared library
@@ -10,6 +7,5 @@ env.TAG_NAME="latest"
 // env.NEXUS_URL = "172.31.38.109"
 // env.SONAR_URL = "172.31.38.100"
 // nodejs()
-docker()
 
-}
+docker()
