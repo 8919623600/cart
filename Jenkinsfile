@@ -10,10 +10,6 @@ env.TAG_NAME="latest"
 // env.SONAR_URL = "172.31.38.100"
 // nodejs()
 // withCredentials{(credentialsId: 'AWC_CREDS')}
-stage('Login to ECR') {
-    withCredentials([usernameId: 'aws-credentials', passwordVariable: 'AWS_ACCESS_KEY_ID', fileCredentialId: 'aws-credentials', secretFileVariable: 'AWS_SECRET_ACCESS_KEY']) {
-      
-    }
-  }
+
 docker()
 }
