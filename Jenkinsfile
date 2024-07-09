@@ -9,6 +9,6 @@ env.TAG_NAME="latest"
 // env.NEXUS_URL = "172.31.38.109"
 // env.SONAR_URL = "172.31.38.100"
 // nodejs()
-withCredentials{(credentialsId: 'AWC_CREDS')}
+// withCredentials{(credentialsId: 'AWC_CREDS')}
 docker()
 }
